@@ -20,6 +20,26 @@ This script is designed to detect potential reverse shell connections on Windows
 
 3. **Excluding Processes**: Certain trusted processes are excluded from detection by default. Modify this list of excluded processes in the script according to your requirements.
 
+If you encounter issues running the script, first ensure you have the `dos2unix` tool installed. You can install it on Debian-based systems like Ubuntu using the following command:
+    ```bash
+    sudo apt-get install dos2unix
+    ```
+
+After installing `dos2unix`, convert the script file to Unix format using the following command:
+    ```bash
+    dos2unix reverse_shell_detector.sh
+    ```
+
+Make the script executable if it's not already:
+    ```bash
+    chmod +x reverse_shell_detector.sh
+    ```
+
+Run the script:
+    ```bash
+    ./reverse_shell_detector.sh
+    ```
+
 ## Instructions
 
 ### Windows
